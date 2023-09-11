@@ -32,7 +32,7 @@
     <header>
         <div>
             <nav class="container mx-auto">
-                <div class="navbar  bg-[#F85559] rounded-full flex-row-reverse lg:flex-row">
+                <div class="navbar lg:bg-[#F85559] rounded-full flex-row-reverse lg:flex-row">
                     <div class=" navbar-start hidden lg:flex text-white">
                         <ul class="menu menu-horizontal px-1">
                             <li><a>Home</a></li>
@@ -41,7 +41,7 @@
                             <li><a>All Fruits</a></li>
                         </ul>
                     </div>
-                    <div class="navbar-start lg:hidden">
+                    <div class="navbar-end lg:hidden">
                         <div class="dropdown">
                             <label tabindex="0" class="btn btn-ghost btn-circle">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -52,15 +52,18 @@
                             </label>
                             <ul tabindex="0"
                                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Homepage</a></li>
-                                <li><a>Portfolio</a></li>
-                                <li><a>About</a></li>
+                                <div class="">
+                                    <li class="text-red-500"><a>Home</a></li>
+                                    <li><a>About Us</a></li>
+                                    <li><a>Shop</a></li>
+                                    <li><a>All Fruits</a></li>
+                                </div>
                             </ul>
                         </div>
                     </div>
-                    <div class=" navbar-center">
+                    <div class="navbar-start lg:navbar-center">
                         <img class="w-8" src="images/logo.png" alt="">
-                        <a class="btn btn-ghost normal-case text-xl text-[#FFF]">daisyUI</a>
+                        <a class="btn btn-ghost normal-case text-xl lg:text-[#FFF]">daisyUI</a>
                     </div>
                     <div class="navbar-end hidden lg:flex">
                         <div class="form-control relative w-96">
@@ -78,8 +81,32 @@
     <main>
 
     </main>
-    <footer>
-
+    <footer class="footer footer-center p-10 bg-[#121212] text-base-content rounded">
+        <nav class="flex ">
+            <img src="images/logo.png" alt="">
+            <h2 class="text-[#FFF] text-5xl">Fruit Burst</h2>
+        </nav>
+        <nav class="grid grid-cols-3 lg:grid-flow-col gap-10 text-[#FFF]">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">All Fruits</a>
+            <a class="link link-hover">My Account</a>
+        </nav>
+        <nav>
+            <div class="grid grid-flow-col gap-8 text-[#FFF] text-4xl">
+                <a><i class="fa-brands fa-twitter"></i></a>
+                <a><i class="fa-brands fa-facebook"></i></a>
+                <a><i class="fa-brands fa-youtube"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-brands fa-linkedin"></i></a>
+                <a><i class="fa-brands fa-apple"></i></a>
+            </div>
+        </nav>
+        <aside class="text-[#FFF]">
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </aside>
     </footer>
 </body>
 
