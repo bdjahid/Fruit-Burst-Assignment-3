@@ -32,8 +32,16 @@
     <header>
         <div>
             <nav class="container mx-auto">
-                <div class="navbar bg-base-100">
-                    <div class="navbar-start">
+                <div class="navbar  bg-[#F85559] rounded-full flex-row-reverse lg:flex-row">
+                    <div class=" navbar-start hidden lg:flex text-white">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-start lg:hidden">
                         <div class="dropdown">
                             <label tabindex="0" class="btn btn-ghost btn-circle">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -50,13 +58,14 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="navbar-center">
-                        <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <div class=" navbar-center">
+                        <img class="w-8" src="images/logo.png" alt="">
+                        <a class="btn btn-ghost normal-case text-xl text-[#FFF]">daisyUI</a>
                     </div>
-                    <div class="navbar-end">
-                        <div class="form-control relative rounded-full">
+                    <div class="navbar-end hidden lg:flex">
+                        <div class="form-control relative w-96">
                             <input type="text" placeholder="Search"
-                                class="input input-bordered w-24 md:w-auto rounded-full" />
+                                class="input input-bordered md:w-auto rounded-full" />
                             <button class="btn btn-ghost btn-circle absolute top-0 right-0 ">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
